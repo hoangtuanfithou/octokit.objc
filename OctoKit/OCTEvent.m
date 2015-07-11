@@ -20,13 +20,6 @@
 #import "OCTRefEvent.h"
 #import "OCTWatchEvent.h"
 
-@interface OCTEvent ()
-
-// The event type of the receiver.
-@property (nonatomic, copy, readonly) NSString *type;
-
-@end
-
 @implementation OCTEvent
 
 #pragma mark Class cluster
