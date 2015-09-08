@@ -11,9 +11,6 @@
 // A class cluster for GitHub events.
 @interface OCTEvent : OCTObject
 
-// The event type of the receiver.
-@property (nonatomic, copy, readonly) NSString *type;
-
 // The name of the repository upon which the event occurred (e.g., `github/Mac`).
 @property (nonatomic, copy, readonly) NSString *repositoryName;
 
