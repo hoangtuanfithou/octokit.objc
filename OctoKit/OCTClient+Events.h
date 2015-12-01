@@ -30,6 +30,8 @@
 /// Returns a signal which sends zero or more OCTEvent objects.
 - (RACSignal *)fetchUserReceivedEventsWithOffset:(NSUInteger)offset perPage:(NSUInteger)perPage;
 
+- (RACSignal *)fetchPerformedEventsForUser:(OCTUser *)user notMatchingEtag:(NSString *)etag;
+
 /// Fetches the performed events for the specified `user`.
 ///
 /// user    - The specified user. This must not be nil.
