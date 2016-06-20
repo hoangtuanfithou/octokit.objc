@@ -1585,6 +1585,8 @@
 				TargetAttributes = {
 					D0040CF219FEC579002869A6 = {
 						CreatedOnToolsVersion = 6.1;
+						DevelopmentTeam = V45CY933KN;
+						DevelopmentTeamName = "Chunfeng Lei";
 					};
 					D0040CFC19FEC579002869A6 = {
 						CreatedOnToolsVersion = 6.1;
