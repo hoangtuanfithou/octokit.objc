@@ -11,11 +11,11 @@
 
 @implementation OCTClient (Search)
 
-- (RACSignal *)searchRepositoriesWithQuery:(NSString *)query orderBy:(NSString *)orderBy ascending:(BOOL)ascending {
+- (RACSignal *)searchRepositoriesWithQuery:(NSString *)query language:(NSString *)language orderBy:(NSString *)orderBy ascending:(BOOL)ascending {
 	NSParameterAssert(query.length > 0);
 	
 	NSMutableDictionary *parameters = [NSMutableDictionary dictionary];
-	parameters[@"q"] = query;
+	parameters[@"q"] = [NSString stringWithFormat:@"%@ language:%@", query, language];
 	
 	if (orderBy.length > 0) parameters[@"sort"] = orderBy;
 	parameters[@"order"] = ascending ? @"asc" : @"desc";

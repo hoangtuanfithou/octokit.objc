@@ -18,7 +18,7 @@
 ///  ascending - The sort order, ascending or not.
 ///
 ///  Returns a signal which will send the search result `OCTRepositoriesSearchResult`.
-- (RACSignal *)searchRepositoriesWithQuery:(NSString *)query orderBy:(NSString *)orderBy ascending:(BOOL)ascending;
+- (RACSignal *)searchRepositoriesWithQuery:(NSString *)query language:(NSString *)language orderBy:(NSString *)orderBy ascending:(BOOL)ascending;
 
 /// Search repositories.
 ///
